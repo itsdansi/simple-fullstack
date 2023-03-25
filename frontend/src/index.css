@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-submit {
+  background-color: #7b1fa2;
+}
+
+.relative {
+  position: relative;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.relative:hover .hidden {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+}
+
+.my-center-class {
+  display: flex;
+  margin: 0 auto;
+}
