@@ -1,5 +1,5 @@
 function errorHandler(err, req, res, next) {
-  console.log(err);
+  console.log("an error occured->>>>", err);
 
   switch (true) {
     case err === "UnauthorizedError":

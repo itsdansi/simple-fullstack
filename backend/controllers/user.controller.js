@@ -28,7 +28,7 @@ const register = async (req, res) => {
             });
           } else {
             const newUser = new userModel({
-              name: req.body.name,
+              userName: req.body.userName,
               email: req.body.email,
               password: hash,
             });

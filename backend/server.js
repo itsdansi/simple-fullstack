@@ -10,6 +10,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
+const cors = require("cors");
 
 const taskRoute = require("./routes/taskRoute");
 const userRoute = require("./routes/userRoute");
@@ -18,6 +19,8 @@ const errorHandler = require("./middlewares/error-handler");
 
 const app = express();
 dotenv.config();
+
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
